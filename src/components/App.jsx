@@ -31,8 +31,7 @@ state = {
   
 componentDidUpdate(prevState) {
   if (this.state.contacts !== prevState.contacts) {
-  console.log('sss')
-        localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
   };     
 };
   
